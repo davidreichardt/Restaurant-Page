@@ -1,7 +1,10 @@
+import './main.css';
 import { navbar } from './navbar';
 import { goToHome } from './home';
 import { goToMenu } from './menu';
 import { goToContact } from './contact';
+
+navbar();
 
 const navHome = document.getElementById('nav-home');
 const navMenu = document.getElementById('nav-menu');
@@ -27,5 +30,4 @@ navContact.addEventListener('click', () => {
   goToContact(content);
 });
 
-navbar();
 goToHome(content);
