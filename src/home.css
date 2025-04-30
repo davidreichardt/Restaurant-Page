@@ -9,6 +9,7 @@
 .overlay {
   display: flex;
   flex-direction: column;
+  height: calc(100dvh - 100px);
   gap: 60px;
   justify-content: center;
   align-items: center;
@@ -16,14 +17,16 @@
 }
 
 .restaurant-name {
-  font-size: 6.2rem;
+  font-size: clamp(3rem, 3vw, 6rem);
   margin-top: 50px;
 }
 
 .restaurant-description {
-  font-size: 4rem;
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  padding: 2rem;
   width: 60%;
-  padding: 40px;
+  max-height: 60vh;
+  overflow: auto;
   background-color: rgba(6, 6, 6, 0.7);
   border-radius: 20px;
 }
